@@ -26,6 +26,6 @@ pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ;
 Для настройки SSH скопировать и вставить в терминал
 
 ```bash
-pkg install openssh git ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; ./termuxssh
+pkg install openssh git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; ./termuxssh
 ```
 --------------
