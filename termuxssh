@@ -1,0 +1,18 @@
+#!/data/data/com.termux/files/usr/bin/bash
+clear
+echo 'PrintMotd yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'PasswordAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'ChallengeResponseAuthentication no' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'PubkeyAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo "
+
+
+
+
+      Ru - Выполнено
+
+      Eng - Done
+
+
+
+"
