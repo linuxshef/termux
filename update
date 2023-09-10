@@ -19,6 +19,8 @@ pkg upgrade -y &&
 
 ############################
 
+rm /data/data/com.termux/files/usr/etc/motd
+
 cd .. &&
 
 rm -Rf termux &&
