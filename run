@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+mv manjaro-android/manjaro.sh ~/
+
+cd ~/
+
+rm -Rf termux
+
+./manjaro.sh
+

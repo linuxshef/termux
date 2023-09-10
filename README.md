@@ -1,5 +1,7 @@
 # termux
+-----------------
 
+# Обновление Termux
 ```bash
 pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./update
 ```
@@ -18,6 +20,11 @@ pkg install root-repo -y ; pkg install x11-repo -y ; pkg install unstable-repo -
 pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./update
 ```
 --------------
+# Установка Manjaro в Termux
+
+pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./run
+
+---------------------
 
 # SSH Termux
 
