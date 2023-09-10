@@ -22,7 +22,7 @@ pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ;
 --------------
 # Установка Manjaro в Termux
 
-pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./run
+pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./manjaro_run
 
 ---------------------
 

@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+mv manjaro-android/startmanjaro ~/
+
+cd ~/
+
+rm -Rf termux
