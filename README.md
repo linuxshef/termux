@@ -18,3 +18,14 @@ pkg install root-repo -y ; pkg install x11-repo -y ; pkg install unstable-repo -
 pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./update
 ```
 --------------
+
+# SSH Termux
+
+--------------
+
+Для настройки SSH скопировать и вставить в терминал
+
+```bash
+pkg install openssh git ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; ./termuxssh
+```
+--------------
