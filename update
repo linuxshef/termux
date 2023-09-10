@@ -17,7 +17,11 @@ apt-get upgrade -y &&
 pkg update -y &&
 pkg upgrade -y &&
 
-rm -Rf termux
+############################
+
+cd .. &&
+
+rm -Rf termux &&
 
 exit
 
