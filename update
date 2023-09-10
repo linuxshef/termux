@@ -1,0 +1,23 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Add repos
+
+pkg install root-repo -y
+pkg install x11-repo -y
+pkg install unstable-repo -y
+
+############################
+
+# Update system
+
+apt update -y &&
+apt upgrade -y &&
+apt-get update -y &&
+apt-get upgrade -y &&
+pkg update -y &&
+pkg upgrade -y &&
+
+rm -Rf termux
+
+exit
+
