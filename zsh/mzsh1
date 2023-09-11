@@ -2,7 +2,7 @@
 sudo pacman -Sy zsh zsh-completions git wget curl
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm ~/.oh-my-zsh
+sudo rm -Rf ~/.oh-my-zsh
 rm ~/.zshrc
 mv .oh-my-zsh ~/
 mv .zshrc ~/
