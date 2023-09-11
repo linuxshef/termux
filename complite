@@ -36,9 +36,20 @@ echo 'PasswordAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/ssh
 echo 'ChallengeResponseAuthentication no' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
 echo 'PubkeyAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
 
+# ZSH
+
+chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm ~/.oh-my-zsh
+rm ~/.zshrc
 mv zsh/.oh-my-zsh ~/
 mv zsh/.zshrc ~/
-chsh -s /bin/zsh
+
+mv manjaro-android/manjaro.sh ~/
+
+cd ~/
+
+rm -Rf termux
 
 exit
 
