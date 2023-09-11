@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo rm ~/.oh-my-zsh
+sudo rm ~/.zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo rm ~/.oh-my-zsh
+sudo rm ~/.zshrc
+mv .oh-my-zsh ~/
+mv .zshrc ~/
