@@ -4,4 +4,6 @@ mv manjaro-android/startmanjaro ~/
 
 cd ~/
 
+rm manjaro.sh
+
 rm -Rf termux

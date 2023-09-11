@@ -29,7 +29,7 @@ pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.c
 Автозапуск
 
 ```bash
-git clone https://github.com/linuxshef/termux.git ; cd termux ; ./manjaro_up
+cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./manjaro_up
 ```
 ---------------------
 
