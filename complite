@@ -1,1 +1,45 @@
- 
+#!/data/data/com.termux/files/usr/bin/bash
+
+termux-setup-storage
+
+# Add repos
+
+pkg install root-repo -y
+pkg install x11-repo -y
+pkg install unstable-repo -y
+
+############################
+
+# Update system
+
+apt update -y &&
+apt upgrade -y &&
+apt-get update -y &&
+apt-get upgrade -y &&
+pkg update -y &&
+pkg upgrade -y &&
+
+############################
+
+rm /data/data/com.termux/files/usr/etc/motd
+
+############################
+
+# Install pkg
+
+pkg install -y wget proot pv pulseaudio curl openssh zsh zsh-completions iproute2 termux-tools
+
+# SSH
+
+echo 'PrintMotd yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'PasswordAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'ChallengeResponseAuthentication no' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+echo 'PubkeyAuthentication yes' >> /data/data/com.termux/files/usr/etc/ssh/sshd_config
+
+mv zsh/.oh-my-zsh ~/
+mv zsh/.zshrc ~/
+chsh -s /bin/zsh
+
+exit
+
+

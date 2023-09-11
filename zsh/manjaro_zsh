@@ -1,0 +1,4 @@
+!#/bin/bash
+mv zsh/.oh-my-zsh ~/
+mv zsh/.zshrc ~/
+chsh -s /bin/zsh

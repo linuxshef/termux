@@ -33,6 +33,12 @@ cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./manjar
 ```
 ---------------------
 
+# Полная преднастройка Termux для работы
+```bash
+pkg install git -y ; cd ~/ ; git clone https://github.com/linuxshef/termux.git ; cd termux ; ./complite
+```
+------------------
+
 # SSH Termux
 
 --------------
